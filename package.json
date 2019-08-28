@@ -1,0 +1,47 @@
+{
+  "name": "omar",
+  "version": "0.0.0",
+  "description": "Prediction on simple variable",
+  "main": "index.js",
+  "kibana": {
+    "version": "7.1.1",
+    "templateVersion": "1.0.0"
+  },
+  "scripts": {
+    "preinstall": "node ../../kibana/preinstall_check",
+    "kbn": "node ../../kibana/scripts/kbn",
+    "es": "node ../../kibana/scripts/es",
+    "lint": "eslint .",
+    "start": "plugin-helpers start",
+    "test:server": "plugin-helpers test:server",
+    "test:browser": "plugin-helpers test:browser",
+    "build": "plugin-helpers build"
+  },
+  "devDependencies": {
+    "@elastic/eslint-config-kibana": "link:../../kibana/packages/eslint-config-kibana",
+    "@elastic/eslint-import-resolver-kibana": "link:../../kibana/packages/kbn-eslint-import-resolver-kibana",
+    "@kbn/expect": "link:../../kibana/packages/kbn-expect",
+    "@kbn/plugin-helpers": "link:../../kibana/packages/kbn-plugin-helpers",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.26.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-mocha": "^5.2.0",
+    "eslint-plugin-no-unsanitized": "^3.0.2",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.2.1",
+    "elasticsearch": "^16.1.1",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.14",
+    "moment": "^2.24.0",
+    "node-machine-id": "^1.1.12",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "tfjs-node-save": "^0.0.2"
+  }
+}

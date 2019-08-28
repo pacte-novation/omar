@@ -1,0 +1,41 @@
+
+.euiButton__content {
+    pointer-events: none !important;
+}
+
+.euiSuperSelectControl:disabled {
+    cursor: pointer !important;
+} 
+
+.euiComboBox.euiComboBox-isDisabled .euiComboBox__inputWrap {
+    cursor :pointer !important;
+}
+
+.euiFormControlLayoutCustomIcon--clickable:disabled {
+    cursor :pointer !important;
+}
+
+.euiSuperSelect__popoverPanel {
+    z-index: 1001 !important;
+    top: 0px !important;
+}
+
+.euiButtonEmpty--primary {
+    color: #343741 !important;
+    text-decoration-line: none !important;
+    
+}
+
+.euiTableCellContent {padding: 0px!important;}
+
+.euiTableRow:hover {background-color: #006BB4!important}
+
+
+.euiTableRow:focus-within {background-color: #006BB4!important}
+
+.euiText h2 {
+    text-align: center!important;
+  }
+
+.euiDescriptionList.euiDescriptionList--row .euiDescriptionList__description {
+    line-height: 0.5 !important;}
